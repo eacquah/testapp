@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+</head>
+<body>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <nav class="tab-bar">
+            <section class="left-small">
+                <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+            </section>
+
+            <section class="middle tab-bar-section">
+                <h1 class="title">LolGH</h1>
+            </section>
+
+            <section class="right-small">
+                <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+            </section>
+        </nav>
+
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <ul class="off-canvas-list">
+                    <li><label>Menu</label></li>
+                    <li><a href="/"><i class="fa fa-meh-o fa-fw"></i>&nbsp;Comics</a></li>
+                    <li><a href="/toon.html"><i class="fa fa-video-camera fa-fw"></i>&nbsp;Toons</a></li>
+                    <li><a href="/news.html"><i class="fa fa-home fa-fw"></i>&nbsp;News</a></li>
+                    <li><a href="/contact.html"><i class="fa fa-comments-o fa-fw"></i>&nbsp;Contact</a></li>
+                </ul>
+            </ul>
+        </aside>
+
+        <aside class="right-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><label>Users</label></li>
+                <li><a href="#">Hari Seldon</a></li>
+                <li><a href="#">...</a></li>
+            </ul>
+        </aside>
+
+        <section class="main-section">
+
+            <div class="row main">
+
+                <div class="large-12 columns">
+
+                    <div class="row">
+                        <div class="large-6 small-12 columns">
+                            <h3 class="title">The Squad</h3>
+
+                            <div class="content" data-slug="panel2">
+                                <ul class="large-block-grid-2 small-block-grid-2">
+                                    <li>
+                                        <img src="/img/bobo.jpg">
+                                        <br/><a href="mailto:bobo@lolgh.com">Bobo@lolgh.com</a>
+                                    </li>
+                                    <li>
+                                        <img src="/img/wallen.jpg">
+                                        <br/><a href="mailto:wallen@lolgh.com">Wallen@lolgh.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="large-6 small-12 columns">
+                            <h3>Get in Touch!</h3>
+                            {% if success %}
+                            <div data-alert class="alert-box success">{{ success }}</div>
+                            {% endif %}
+                            <div class="section-container tabs" data-section>
+                                <section class="section">
+                                    <div class="content" data-slug="panel1">
+                                        <form method="post" action="">
+                                            <div class="row collapse">
+                                                <div class="large-12 columns">
+                                                    <input type="text" id="yourName" name="name" placeholder="name [Kwaku Ananse]"
+                                                           required="true">
+                                                </div>
+                                            </div>
+                                            <div class="row collapse">
+                                                <div class="large-12 columns">
+                                                    <input type="email" id="yourEmail" name="email"
+                                                           placeholder="email [jack@around-the-fireside.com]" required="true">
+                                                </div>
+                                            </div>
+                                            <textarea rows="4" placeholder="w'aguan?" name="msg" required="true"></textarea>
+                                            <button type="submit" class="radius button">Submit</button>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <a class="exit-off-canvas"></a>
+
+    </div>
+</div>
+<footer>
+
+</footer>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

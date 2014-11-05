@@ -1,0 +1,20 @@
+html {
+  position: relative;
+  min-height: 100%;
+  clear: both;
+}
+
+html, body {
+  margin-bottom: 100px;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+}
+
+.sidebar {
+  height: 100%;
+}
