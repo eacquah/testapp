@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+</head>
+<body>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <nav class="tab-bar">
+            <section class="left-small">
+                <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+            </section>
+
+            <section class="middle tab-bar-section">
+                <h1 class="title">Foundation</h1>
+            </section>
+
+            <section class="right-small">
+                <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+            </section>
+        </nav>
+
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <ul class="off-canvas-list">
+                    <li><label>Menu</label></li>
+                    <li><a href="/"><i class="fa fa-meh-o fa-fw"></i>&nbsp;Comics</a></li>
+                    <li><a href="/toon.html"><i class="fa fa-video-camera fa-fw"></i>&nbsp;Toons</a></li>
+                    <li><a href="/news.html"><i class="fa fa-home fa-fw"></i>&nbsp;News</a></li>
+                    <li><a href="/contact.html"><i class="fa fa-comments-o fa-fw"></i>&nbsp;Contact</a></li>
+                </ul>
+            </ul>
+        </aside>
+
+        <aside class="right-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><label>Users</label></li>
+                <li><a href="#">Hari Seldon</a></li>
+                <li><a href="#">...</a></li>
+            </ul>
+        </aside>
+
+        <section class="main-section">
+<div class="row main">
+    <div class="large-9 medium-9 columns">
+        <div class="flex-video widescreen vimeo">
+            <iframe width="560" height="315" src="//www.youtube.com/embed/{{ toon.url }}" frameborder="0"
+                    webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+        <!--<img src="http://placehold.it/1000x500&text=[img]"/>-->
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="row text-center hide-for-small">
+            <div class="addthis_sharing_toolbox"></div>
+        </div>
+
+
+    </div>
+
+
+</div>
+</section>
+
+<a class="exit-off-canvas"></a>
+
+</div>
+</div>
+<footer>
+
+</footer>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
