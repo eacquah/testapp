@@ -109,7 +109,7 @@
 
     <!-- blackberry10 -->
     <platform name="blackberry10">
-        <source-file src="src/blackberry10/index.js" target-dir="Notification" />
+        <source-file src="src/blackberry10/app-angular.js" target-dir="Notification" />
         <config-file target="www/config.xml" parent="/widget">
             <feature name="Notification" value="Notification"/>
         </config-file>

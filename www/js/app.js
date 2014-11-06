@@ -2,6 +2,7 @@
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
 
+/*
 $(function() {
     //Enable swiping...
     $(".display-comic").swipe( {
@@ -26,4 +27,4 @@ $(function() {
         adaptiveHeight: true,
         dots: false
     });
-});
+});*/

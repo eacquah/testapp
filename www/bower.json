@@ -4,5 +4,8 @@
   "private": "true",
   "dependencies": {
     "foundation": "zurb/bower-foundation"
+  },
+  "resolutions": {
+    "angular": "1.2.26"
   }
 }
