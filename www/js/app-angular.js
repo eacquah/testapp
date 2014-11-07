@@ -35,9 +35,21 @@ myApp.config(function($routeProvider) {
 });
 
 // create the controller and inject Angular's $scope
-myApp.controller('mainController', function($scope) {
+myApp.controller('mainController', function($scope, $http) {
+
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!';
+
+    $http.defaults.useXDomain = true;
+
+    var comics = $http({
+        method: 'GET',
+        url: 'http://test.local/api/comics/'
+    });
+
+    console.log(JSON.stringify(comics));
+
+    $scope.comics = comics;
 });
 
 myApp.controller('toonController', function($scope) {
