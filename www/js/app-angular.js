@@ -44,7 +44,7 @@ myApp.controller('mainController', function($scope, $http) {
 
     var comics = $http({
         method: 'GET',
-        url: 'http://test.local/api/comics/'
+        url: 'http://lolgh.spacebarweb.com/api/comics/'
     });
 
     console.log(JSON.stringify(comics));
