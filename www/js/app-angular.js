@@ -1,5 +1,5 @@
 // create the module and name it scotchApp
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute','slick']);
 
 // configure our routes
 myApp.config(function($routeProvider) {
@@ -42,18 +42,30 @@ myApp.controller('mainController', function($scope, $http) {
 
     $http.defaults.useXDomain = true;
 
-    var comics = $http({
-        method: 'GET',
-        url: 'http://lolgh.spacebarweb.com/api/comics/'
+    $http.get('http://test.local/api/comics').
+    success(function (data, status, headers, config) {
+            //alert(data[0].toSource());
+        $scope.comics = data;
+    }).
+    error(function (data, status, headers, config) {
+        // error msg
     });
-
-    console.log(JSON.stringify(comics));
-
-    $scope.comics = comics;
 });
 
 myApp.controller('toonController', function($scope) {
-    $scope.message = 'Look! I am an about page.';
+    // create a message to display in our view
+    $scope.message = 'Everyone come and see how good I look!';
+
+    $http.defaults.useXDomain = true;
+
+    $http.get('http://test.local/api/toons').
+        success(function (data, status, headers, config) {
+            alert(data[0].toSource());
+            $scope.latestToon = data[0];
+        }).
+        error(function (data, status, headers, config) {
+            // error msg
+        });
 });
 
 myApp.controller('newsController', function($scope) {

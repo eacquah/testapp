@@ -31,7 +31,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.3.13/slick.css"/>
 
     <!-- JS -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
@@ -42,52 +42,61 @@
 <!-- define angular controller -->
 <body ng-controller="mainController">
 
-<header>
-    <div class="contain-to-grid">
-        <nav class="top-bar" data-topbar role="navigation">
-            <ul class="title-area">
-                <li class="name">
-                    <h1><a href="/">LolGH</a></h1>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <nav class="tab-bar">
+            <section class="left-small">
+                <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+            </section>
 
-<div class="container">
-    <div class="row">
+            <section class="middle tab-bar-section">
+                <h1 class="title">My App</h1>
+            </section>
+
+            <section class="right-small">
+                <a class="right-off-canvas-toggle menu-icon" href="#">
+                    <span><i class="fa fa-angle-double-left fa-lg"></i></span>
+                </a>
+            </section>
+        </nav>
+
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <ul class="off-canvas-list">
+                    <li><label>Menu</label></li>
+                    <li><a href="/"><i class="fa fa-meh-o fa-fw"></i>&nbsp;Comics</a></li>
+                    <li><a href="#toons"><i class="fa fa-video-camera fa-fw"></i>&nbsp;Toons</a></li>
+                    <li><a href="#updates"><i class="fa fa-home fa-fw"></i>&nbsp;News</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments-o fa-fw"></i>&nbsp;Contact</a></li>
+                </ul>
+            </ul>
+        </aside>
+
+        <aside class="right-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><label>Share</label></li>
+                <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+        </aside>
+
         <div ng-view>
         </div>
+
+        <a class="exit-off-canvas"></a>
+
     </div>
 </div>
-
 <footer>
-    <div class="icon-bar four-up">
-        <a href="/" class="item">
-            <i class="fa fa-meh-o fa-fw"></i>
-            <label>Comics</label>
-        </a>
-        <a href="#toons" class="item">
-            <i class="fa fa-video-camera fa-fw"></i>
-            <label>Toons</label>
-        </a>
-        <a href="#updates" class="item">
-            <i class="fa fa-home fa-fw"></i>
-            <label>News</label>
-        </a>
-        <a href="#contact" class="item">
-            <i class="fa fa-comments-o fa-fw"></i>
-            <label>Contact</label>
-        </a>
-    </div>
-</footer>
 
+</footer>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/foundation/js/foundation.min.js"></script>
-<script src="bower_components/slick-carousel/slick/slick.js"></script>
-<script src="bower_components/angular-slick/dist/slick.js"></script>
-<script src="js/app-angular.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.13/slick.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/app-angular.js"></script>
 
 </body>
+
 </html>
