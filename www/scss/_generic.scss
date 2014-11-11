@@ -3,7 +3,6 @@
 
 body {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
-  background-size: 20% auto, 20% auto;
 }
 
 h1, h2, h3, h4 {
@@ -50,6 +49,22 @@ iframe[id^='twitter-widget-'] {
 
 .secondary-btn{
   background: #333;
+}
+
+.top-bar{
+  background: #333;
+}
+
+.custom-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+  $bg:#333,
+    // Sets the panel padding amount. Default: $panel-padding
+  $padding:20px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+  $adjust:true
+  );
+  min-height: 100%! important;
 }
 
 footer {

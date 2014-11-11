@@ -20,6 +20,9 @@
     "installed_plugins": {
         "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "com.phonegap.plugins.twitter": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
     "dependent_plugins": {}
