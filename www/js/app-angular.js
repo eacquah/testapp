@@ -2,7 +2,7 @@
 var myApp = angular.module('myApp', ['ngRoute', 'slick']);
 
 // configure our routes
-myApp.config(function ($routeProvider) {
+myApp.config(function ($routeProvider, $compileProvider) {
     $routeProvider
 
         // route for the home page
@@ -32,6 +32,8 @@ myApp.config(function ($routeProvider) {
         .otherwise({
             redirectTo: '/'
         });
+
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension):/);
 });
 
 // create the controller and inject Angular's $scope
