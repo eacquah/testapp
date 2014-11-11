@@ -23422,7 +23422,6 @@ footer {
 
 /* line 8, ../scss/_footer.scss */
 footer .panel {
-  background: #333;
   border: none;
   color: #ebebeb;
 }
@@ -23430,78 +23429,104 @@ footer .panel {
 /* line 4, ../scss/_generic.scss */
 body {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
-  background-size: 20% auto, 20% auto;
 }
 
-/* line 9, ../scss/_generic.scss */
+/* line 8, ../scss/_generic.scss */
 h1, h2, h3, h4 {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
 }
 
-/* line 13, ../scss/_generic.scss */
+/* line 12, ../scss/_generic.scss */
 .top-bar-section ul li > a {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
 }
 
-/* line 17, ../scss/_generic.scss */
+/* line 16, ../scss/_generic.scss */
 #main-comic {
   padding: 0 0 70px 0;
 }
 
-/* line 21, ../scss/_generic.scss */
+/* line 20, ../scss/_generic.scss */
 #main-comic img {
   text-align: center;
 }
 
-/* line 25, ../scss/_generic.scss */
+/* line 24, ../scss/_generic.scss */
 .share-button {
   text-align: center;
 }
 
-/* line 29, ../scss/_generic.scss */
+/* line 28, ../scss/_generic.scss */
 iframe[id^='twitter-widget-'] {
   width: 100% !important;
 }
 
-/* line 33, ../scss/_generic.scss */
+/* line 32, ../scss/_generic.scss */
 .timeline {
   border-radius: 0 !important;
 }
 
-/* line 37, ../scss/_generic.scss */
+/* line 36, ../scss/_generic.scss */
 .fb-like-box iframe {
   width: 100% !important;
   height: 100% !important;
   z-index: 1;
 }
 
-/* line 43, ../scss/_generic.scss */
+/* line 42, ../scss/_generic.scss */
 .no-pad-right {
   padding-right: 0;
 }
 
-/* line 47, ../scss/_generic.scss */
-.toon-admin-header {
-  min-height: 40px;
-}
-
-/* line 51, ../scss/_generic.scss */
+/* line 46, ../scss/_generic.scss */
 .centered {
   text-align: center;
 }
 
-/* line 55, ../scss/_generic.scss */
-.sidebar {
-  height: 100% important;
-  overflow: hidden;
-}
-
-/* line 60, ../scss/_generic.scss */
+/* line 50, ../scss/_generic.scss */
 .secondary-btn {
   background: #333;
 }
 
-/* line 64, ../scss/_generic.scss */
+/* line 54, ../scss/_generic.scss */
+.top-bar {
+  background: #333;
+}
+
+/* line 58, ../scss/_generic.scss */
+.custom-panel {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2d2d2d;
+  margin-bottom: 1.25rem;
+  padding: 20px;
+  background: #333;
+  color: #FFFFFF;
+  min-height: 100% !important;
+}
+/* line 54, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.custom-panel > :first-child {
+  margin-top: 0;
+}
+/* line 55, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.custom-panel > :last-child {
+  margin-bottom: 0;
+}
+/* line 63, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.custom-panel h1, .custom-panel h2, .custom-panel h3, .custom-panel h4, .custom-panel h5, .custom-panel h6, .custom-panel p, .custom-panel li, .custom-panel dl {
+  color: #FFFFFF;
+}
+/* line 67, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.custom-panel h1, .custom-panel h2, .custom-panel h3, .custom-panel h4, .custom-panel h5, .custom-panel h6 {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+/* line 69, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.custom-panel h1.subheader, .custom-panel h2.subheader, .custom-panel h3.subheader, .custom-panel h4.subheader, .custom-panel h5.subheader, .custom-panel h6.subheader {
+  line-height: 1.4;
+}
+
+/* line 70, ../scss/_generic.scss */
 footer {
   z-index: 999;
 }
@@ -23524,9 +23549,4 @@ html, body {
   width: 100%;
   min-height: 100%;
   background: #fff;
-}
-
-/* line 18, ../scss/_layout.scss */
-.sidebar {
-  height: 100%;
 }
