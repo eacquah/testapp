@@ -1,10 +1,10 @@
 <div ng-controller="mainController">
     <section class="main-section">
         <div class="row main">
-            <div class="large-12 small-12 columns">
+            <div class="large-12 small-12 columns panel">
                 <slick infinite=false slides-to-show=1 slides-to-scroll=1 data="comics" init-onload=true arrows=true centerMode=true>
                     <div ng-repeat="comic in comics">
-                        <h4>{{ comic.title }} posted on 22-10-2014</h4>
+                        <h4>{{ comic.title }} posted on {{ comic.releaseDate | date:'dd-MM-yyyy' }}</h4>
                         <img src="http://placehold.it/1000x1000&text=[{{ comic.title }}]"/>
                     </div>
                 </slick>
