@@ -29,6 +29,7 @@
 /var/www/testapp/platforms/android/assets/www/Gemfile \
 /var/www/testapp/platforms/android/assets/www/spec.html \
 /var/www/testapp/platforms/android/assets/www/phonegap.js \
+/var/www/testapp/platforms/android/assets/www/fonts \
 /var/www/testapp/platforms/android/assets/www/res \
 /var/www/testapp/platforms/android/assets/www/robots.txt \
 /var/www/testapp/platforms/android/assets/www/bower_components \
@@ -49,6 +50,11 @@
 /var/www/testapp/platforms/android/assets/www/cordova.js \
 /var/www/testapp/platforms/android/assets/www/plugins \
 /var/www/testapp/platforms/android/assets/www/icon.png \
+/var/www/testapp/platforms/android/assets/www/fonts/fontawesome-webfont.woff \
+/var/www/testapp/platforms/android/assets/www/fonts/fontawesome-webfont.eot \
+/var/www/testapp/platforms/android/assets/www/fonts/FontAwesome.otf \
+/var/www/testapp/platforms/android/assets/www/fonts/fontawesome-webfont.svg \
+/var/www/testapp/platforms/android/assets/www/fonts/fontawesome-webfont.ttf \
 /var/www/testapp/platforms/android/assets/www/res/screen \
 /var/www/testapp/platforms/android/assets/www/res/icon \
 /var/www/testapp/platforms/android/assets/www/res/screen/bada-wac \
@@ -628,6 +634,7 @@
 /var/www/testapp/platforms/android/assets/www/scss/_layout.scss \
 /var/www/testapp/platforms/android/assets/www/scss/app.scss \
 /var/www/testapp/platforms/android/assets/www/scss/_footer.scss \
+/var/www/testapp/platforms/android/assets/www/stylesheets/font-awesome.min.css \
 /var/www/testapp/platforms/android/assets/www/stylesheets/index.css \
 /var/www/testapp/platforms/android/assets/www/stylesheets/app.css \
 /var/www/testapp/platforms/android/assets/www/plugins/com.phonegap.plugins.twitter \

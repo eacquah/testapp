@@ -1,12 +1,12 @@
 <div ng-controller="mainController">
     <section class="main-section">
         <div class="row main">
-            <div class="large-12 small-12 columns custom-panel centered">
-                <slick infinite=false slides-to-show=1 slides-to-scroll=1 data="comics" init-onload=true arrows=true centerMode=true>
+            <div class="custom-panel large-11 large-centered medium-11 medium-centered small-11 small-centered columns centered">
+                <slick lazy-load="ondemand" infinite=false slides-to-show=1 slides-to-scroll=1 data="comics" init-onload=true arrows=true centerMode=true>
                     <div ng-repeat="comic in comics">
                         <h4>"{{ comic.title }}" posted on {{ comic.releaseDate | date:'dd-MM-yyyy' }}</h4>
-                        <img src="http://placehold.it/1000x1000&text=[{{ comic.title }}]"/>
-                        <button onclick="window.plugins.socialsharing.shareViaFacebook('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')">
+                        <img data-lazy="http://placehold.it/1000x1000&text=[{{ comic.title }}]"/>
+                        <button onclick="window.pluginsco.socialsharing.shareViaFacebook('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')">
                             <i class="fa fa-facebook fa-fw"></i>
                         </button>
                         <button onclick="window.plugins.socialsharing.shareViaTwitter('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')">

@@ -33,7 +33,7 @@ myApp.config(function ($routeProvider, $compileProvider) {
             redirectTo: '/'
         });
 
-    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension):/);
 });
 
 // create the controller and inject Angular's $scope
