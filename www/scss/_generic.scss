@@ -9,16 +9,8 @@ h1, h2, h3, h4 {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
 }
 
-.top-bar-section ul li > a{
+.top-bar ul li > a{
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
-}
-
-#main-comic {
-  padding: 0 0 70px 0;
-}
-
-#main-comic img {
-  text-align: center;
 }
 
 .share-button {
@@ -58,13 +50,14 @@ iframe[id^='twitter-widget-'] {
 .custom-panel {
   @include panel(
     // Sets the panel background color. Default: $panel-pg
-  $bg:#333,
+  $bg:#FFFFFF,
     // Sets the panel padding amount. Default: $panel-padding
-  $padding:20px,
+  $padding:50px,
     // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
   $adjust:true
   );
   min-height: 100%! important;
+  text-align: center;
 }
 
 footer {

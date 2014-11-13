@@ -7,7 +7,7 @@ myApp.config(function ($routeProvider, $compileProvider) {
 
         // route for the home page
         .when('/', {
-            templateUrl: 'pages/home.html',
+            templateUrl: 'pages/comic.html',
             controller: 'mainController'
         })
 
@@ -46,7 +46,6 @@ myApp.controller('mainController', function ($scope, $http) {
 
     $http.get('http://lolgh.spacebarweb.com/api/comics').
         success(function (data, status, headers, config) {
-            //alert(data[0].toSource());
             $scope.comics = data;
         }).
         error(function (data, status, headers, config) {

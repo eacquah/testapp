@@ -610,9 +610,9 @@
 /var/www/testapp/platforms/android/assets/www/bower_components/get-style-property/package.json \
 /var/www/testapp/platforms/android/assets/www/bower_components/get-style-property/bower.json \
 /var/www/testapp/platforms/android/assets/www/bower_components/get-style-property/get-style-property.js \
+/var/www/testapp/platforms/android/assets/www/pages/comic.html \
 /var/www/testapp/platforms/android/assets/www/pages/toon.html \
 /var/www/testapp/platforms/android/assets/www/pages/news.html \
-/var/www/testapp/platforms/android/assets/www/pages/home.html \
 /var/www/testapp/platforms/android/assets/www/pages/contact.html \
 /var/www/testapp/platforms/android/assets/www/img/bobo.jpg \
 /var/www/testapp/platforms/android/assets/www/img/logo.png \

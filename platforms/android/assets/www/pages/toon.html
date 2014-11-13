@@ -1,15 +1,13 @@
 <div ng-controller="toonController">
     <section class="main-section">
-        <div class="row main">
-            <div class="custom-panel large-11 large-centered medium-11 medium-centered small-11 small-centered columns centered">
-                <h4>{{ newToon.title }} posted on 22-10-2014</h4>
+        <div class="custom-panel large-12 large-centered medium-12 medium-centered small-12 small-centered columns centered">
+            <h4>{{ newToon.title }} posted on {{ newToon.releaseDate * 1000 | date:'EEE, dd-MMM-yyyy' }}</h4>
 
-                <div class="flex-video widescreen vimeo">
-                    <iframe id="video" width="640" height="480" frameborder="0" id="player" webkitAllowFullScreen
-                            mozallowfullscreen allowFullScreen
-                            title="YouTube video player"
-                            src="http://www.youtube.com/embed/UkLfmrxmvmw?enablejsapi=1&rel=0&showinfo=0&controls=0"></iframe>
-                </div>
+            <div class="flex-video widescreen vimeo">
+                <iframe id="video" width="640" height="480" frameborder="0" id="player" webkitAllowFullScreen
+                        mozallowfullscreen allowFullScreen
+                        title="YouTube video player"
+                        src="http://www.youtube.com/embed/UkLfmrxmvmw?enablejsapi=1&rel=0&showinfo=0&controls=0"></iframe>
             </div>
         </div>
     </section>
