@@ -23427,7 +23427,7 @@ footer .panel {
 }
 
 /* line 4, ../scss/_generic.scss */
-body {
+html, body {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
 }
 
