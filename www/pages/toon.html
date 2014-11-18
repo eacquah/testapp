@@ -9,6 +9,33 @@
                         title="YouTube video player"
                         src="http://www.youtube.com/embed/UkLfmrxmvmw?enablejsapi=1&rel=0&showinfo=0&controls=0"></iframe>
             </div>
+
+            <ul class="button-group even-3">
+                <li>
+                    <a class="button" onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">
+                        <i class="fa fa-facebook fa-fw"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="button" onclick="window.plugins.socialsharing.shareViaTwitter('Message via Twitter')">
+                        <i class="fa fa-twitter fa-fw"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="button" onclick="window.plugins.socialsharing.shareViaEmail(
+                              'Message', // can contain HTML tags, but support on Android is rather limited:  http://stackoverflow.com/questions/15136480/how-to-send-html-content-with-image-through-android-default-email-client
+                              'Subject',
+                              ['to@person1.com', 'to@person2.com'], // TO: must be null or an array
+                              ['cc@person1.com'], // CC: must be null or an array
+                              null, // BCC: must be null or an array
+                              ['https://www.google.nl/images/srpr/logo4w.png','www/localimage.png'], // FILES: can be null, a string, or an array
+                              onSuccess, // called when sharing worked, but also when the user cancelled sharing via email (I've found no way to detect the difference)
+                              onError // called when sh*t hits the fan
+                            );">
+                        <i class="fa fa-envelope-o fa-fw"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 </div>
