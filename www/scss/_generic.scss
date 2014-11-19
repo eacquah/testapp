@@ -3,6 +3,7 @@
 
 html, body {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
+  background: #000000;
 }
 
 h1, h2, h3, h4 {
@@ -50,7 +51,7 @@ iframe[id^='twitter-widget-'] {
 .custom-panel {
   @include panel(
     // Sets the panel background color. Default: $panel-pg
-  $bg:#FFFFFF,
+  $bg:#000000,
     // Sets the panel padding amount. Default: $panel-padding
   $padding:50px,
     // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust

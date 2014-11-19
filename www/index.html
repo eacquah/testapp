@@ -40,6 +40,19 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="js/SocialSharing.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+        // Wait for device API libraries to load
+        //
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // device APIs are available
+        //
+        function onDeviceReady() {
+            navigator.splashscreen.show();
+        }
+
+    </script>
 </head>
 
 <body>
@@ -48,7 +61,7 @@
         <nav class="top-bar" data-topbar role="navigation">
             <ul class="title-area centered">
                 <li class="name">
-                    <h1>My App</h1>
+                    <h1><a href="#">LolGH</a></h1>
                 </li>
             </ul>
         </nav>
@@ -65,16 +78,16 @@
 <footer>
     <div class="icon-bar three-up">
         <a href="#/" class="item">
-            <i class="fa fa-meh-o fa-fw"></i>
-            <label>Comics</label>
+            <i class="fa fa-comments-o fa-fw"></i>
+            <!--<label>Comics</label>-->
         </a>
         <a href="#toons" class="item">
-            <i class="fa fa-video-camera fa-fw"></i>
-            <label>Toons</label>
+            <i class="fa fa-film fa-fw"></i>
+            <!--<label>Toons</label>-->
         </a>
         <a href="#contact" class="item">
-            <i class="fa fa-comments-o fa-fw"></i>
-            <label>Contact</label>
+            <i class="fa fa-envelope-o fa-fw"></i>
+            <!--<label>Contact</label>-->
         </a>
     </div>
 </footer>
