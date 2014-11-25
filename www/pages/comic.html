@@ -1,8 +1,8 @@
 <div ng-controller="mainController">
     <section class="main-section">
         <div class="custom-panel large-12 large-centered medium-12 medium-centered small-12 small-centered columns centered">
-            <slick lazy-load="ondemand" infinite=false slides-to-show=1 slides-to-scroll=1 data="comics"
-                   init-onload=true arrows=true centerMode=true rtl=true>
+            <slick ng-if="dataLoaded" lazy-load="ondemand" infinite="false" slides-to-show=1 slides-to-scroll=1 data="dataLoaded"
+                   init-onload="false" arrows="true" centerMode="true" rtl="true">
                 <div ng-repeat="comic in comics">
                     <h4>"{{ comic.title }}" posted on {{ comic.releaseDate * 1000 | date:'EEE, dd-MMM-yyyy' }}</h4>
                     <img data-lazy="http://lolgh.com/cms/content/lol_gh/{{ comic.url }}"/>

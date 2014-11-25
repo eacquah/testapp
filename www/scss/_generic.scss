@@ -51,7 +51,7 @@ iframe[id^='twitter-widget-'] {
 .custom-panel {
   @include panel(
     // Sets the panel background color. Default: $panel-pg
-  $bg:#000000,
+  $bg:#FFFFFF,
     // Sets the panel padding amount. Default: $panel-padding
   $padding:20px 20px 40px 20px,
     // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
@@ -59,6 +59,10 @@ iframe[id^='twitter-widget-'] {
   );
   min-height: 100%! important;
   text-align: center;
+}
+
+.slick-prev:before, .slick-next:before {
+  color:#000000 !important;
 }
 
 footer {
