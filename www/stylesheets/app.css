@@ -23429,7 +23429,7 @@ footer .panel {
 /* line 4, ../scss/_generic.scss */
 html, body {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
-  background: #000000;
+  background: #FFFFFF;
 }
 
 /* line 9, ../scss/_generic.scss */
@@ -23493,6 +23493,7 @@ iframe[id^='twitter-widget-'] {
   padding: 20px 20px 40px 20px;
   background: #FFFFFF;
   color: #333333;
+  border: none;
   min-height: 100% !important;
   text-align: center;
 }
@@ -23518,12 +23519,12 @@ iframe[id^='twitter-widget-'] {
   line-height: 1.4;
 }
 
-/* line 64, ../scss/_generic.scss */
+/* line 65, ../scss/_generic.scss */
 .slick-prev:before, .slick-next:before {
   color: #000000 !important;
 }
 
-/* line 68, ../scss/_generic.scss */
+/* line 69, ../scss/_generic.scss */
 footer {
   z-index: 999;
 }

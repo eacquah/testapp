@@ -1,28 +1,28 @@
 <div ng-controller="toonController">
     <section class="main-section">
         <div class="custom-panel large-12 large-centered medium-12 medium-centered small-12 small-centered columns centered">
-            <h4>{{ newToon.title }} posted on {{ newToon.releaseDate * 1000 | date:'EEE, dd-MMM-yyyy' }}</h4>
+            <h4>"{{ newToon.title }}" posted on {{ newToon.releaseDate * 1000 | date:'EEE, dd-MMM-yyyy' }}</h4>
 
             <div class="flex-video widescreen vimeo">
                 <iframe id="video" width="640" height="480" frameborder="0" id="player" webkitAllowFullScreen
                         mozallowfullscreen allowFullScreen
                         title="YouTube video player"
-                        src="http://www.youtube.com/embed/UkLfmrxmvmw?enablejsapi=1&rel=0&showinfo=0&controls=0"></iframe>
+                        ng-src="{{ newToon.fullUrl }}"></iframe>
             </div>
 
             <ul class="button-group even-3">
                 <li>
-                    <a class="button" onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">
+                    <a class="button" ng-click="facebookShare('{{ newToon.title }}','{{ toonImage }}','{{ toonStemUrl }}{{ toon.toonId }}')">
                         <i class="fa fa-facebook fa-fw"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="button" onclick="window.plugins.socialsharing.shareViaTwitter('Message and link via Twitter', null /* img */, 'http://www.x-services.nl')">
+                    <a class="button" ng-click="twitterShare('{{ newToon.title }}','{{ toonImage }}','{{ toonStemUrl }}{{ toon.toonId }}')">
                         <i class="fa fa-twitter fa-fw"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="button" onclick="window.plugins.socialsharing.share('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')">
+                    <a class="button" ng-click="generalShare('{{ newToon.title }}','{{ toonImage }}','{{ toonStemUrl }}{{ toon.toonId }}')">
                         <i class="fa fa-share-alt fa-fw"></i>
                     </a>
                 </li>

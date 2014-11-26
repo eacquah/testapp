@@ -3,7 +3,7 @@
 
 html, body {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
-  background: #000000;
+  background: #FFFFFF;
 }
 
 h1, h2, h3, h4 {
@@ -57,6 +57,7 @@ iframe[id^='twitter-widget-'] {
     // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
   $adjust:true
   );
+  border: none;
   min-height: 100%! important;
   text-align: center;
 }
