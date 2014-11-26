@@ -2,7 +2,7 @@
     <section class="main-section">
         <div class="custom-panel large-12 large-centered medium-12 medium-centered small-12 small-centered columns centered">
             <div class="content" ng-repeat="tweet in tweets">
-                <div ng-if="tweet !== ''">
+                <div ng-show="tweet.text != null">
                     <p><i class="fa fa-twitter fa-2x"></i>{{ tweet.text }}</p>
                     <hr ng-hide="$last">
                 </div>

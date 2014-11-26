@@ -69,26 +69,6 @@ myApp.directive('slickSlider', function ($http) {
 // create the controller and inject Angular's $scope
 myApp.controller('mainController', function ($scope, $timeout, $http) {
 
-    /*$timeout(function(){
-        // // create a message to display in our view
-        $scope.message = 'Everyone come and see how good I look!';
-
-        $http.defaults.useXDomain = true;
-
-        $scope.comics = [];
-
-        $http.get('http://lolgh.spacebarweb.com/api/comics').
-            success(function (data, status, headers, config) {
-                $scope.comics = data;
-                $scope.dataLoaded = true;
-            }).
-            error(function (data, status, headers, config) {
-                // error msg
-            });
-
-
-    }, 2000);*/
-
     $scope.comicDir = 'http://lolgh.com/cms/content/lol_gh/';
     $scope.comicStemUrl = 'http://lolgh.com/comic/';
     $scope.facebookShare = function(title, img, url) {
@@ -129,14 +109,13 @@ myApp.controller('toonController', function ($scope, $http, $sce) {
 });
 
 myApp.controller('newsController', function ($scope, $http) {
-    // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';
 
     $http.defaults.useXDomain = true;
 
     $http.get('http://lolgh.spacebarweb.com/api/twitter').
         success(function (data, status, headers, config) {
             $scope.tweets = data;
+            console.log($scope.tweets);
         }).
         error(function (data, status, headers, config) {
             // error msg
@@ -144,5 +123,4 @@ myApp.controller('newsController', function ($scope, $http) {
 });
 
 myApp.controller('contactController', function ($scope) {
-    $scope.message = 'Contact us! JK. This is just a demo.';
 });
