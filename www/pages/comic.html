@@ -10,17 +10,17 @@
                         <img data-lazy="{{ comicDir }}{{ comic.url }}" ng-if="!$first"/>
                         <ul class="button-group even-3">
                             <li>
-                                <a class="button" ng-click="facebookShare('{{ comic.title }}','{{ comicDir }}{{ comic.url }}','{{ comicStemUrl }}{{ comic.comicId }}')">
+                                <a class="button" ng-click="facebookShare(comic.title,concatenate(comicDir, comic.url),concatenate(comicStemUrl, comic.comicId))">
                                     <i class="fa fa-facebook fa-fw"></i>
                                 </a>
                             </li>
                             <li>
-                                <a class="button" ng-click="twitterShare('{{ comic.title }}','{{ comicDir }}{{ comic.url }}','{{ comicStemUrl }}{{ comic.comicId }}')">
+                                <a class="button" ng-click="twitterShare(comic.title,concatenate(comicDir, comic.url),concatenate(comicStemUrl, comic.comicId))">
                                     <i class="fa fa-twitter fa-fw"></i>
                                 </a>
                             </li>
                             <li>
-                                <a class="button" ng-click="generalShare(comic.title, comicDir{{ comic.url }}','{{ comicStemUrl }}{{ comic.comicId }}')">
+                                <a class="button" ng-click="generalShare(comic.title,concatenate(comicDir, comic.url),concatenate(comicStemUrl, comic.comicId))">
                                     <i class="fa fa-share-alt fa-fw"></i>
                                 </a>
                             </li>

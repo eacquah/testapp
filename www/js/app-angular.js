@@ -71,8 +71,13 @@ myApp.controller('mainController', function ($scope, $timeout, $http) {
 
     $scope.comicDir = 'http://lolgh.com/cms/content/lol_gh/';
     $scope.comicStemUrl = 'http://lolgh.com/comic/';
+
+    $scope.concatenate = function(string1, string2) {
+        return string1 + string2;
+    }
+
     $scope.facebookShare = function(title, img, url) {
-        window.plugins.socialsharing.shareViaFacebook(title, img, url);
+        window.plugins.socialsharing.shareViaFacebook(title, img, url, function() {console.log('share ok')}, function(errormsg){alert(errormsg)});
     };
     $scope.twitterShare = function(title, img, url) {
         window.plugins.socialsharing.shareViaTwitter(title, img, url);
@@ -89,7 +94,7 @@ myApp.controller('toonController', function ($scope, $http, $sce) {
         success(function (data, status, headers, config) {
             $scope.newToon = data[0];
             $scope.newToon.fullUrl =  $sce.trustAsResourceUrl("http://www.youtube.com/embed/" + $scope.newToon.url + "?enablejsapi=1&rel=0&showinfo=0&controls=0");
-            $scope.toonStemUrl = 'http://lolgh.com/toon/';
+            $scope.toonUrl = 'http://lolgh.com/toon/' + $scope.newToon.toonId;
             $scope.toonImage = 'http://img.youtube.com/vi/' + $scope.newToon.url + '/mqdefault.jpg';
         }).
         error(function (data, status, headers, config) {
@@ -98,7 +103,7 @@ myApp.controller('toonController', function ($scope, $http, $sce) {
 
 
     $scope.facebookShare = function(title, img, url) {
-        window.plugins.socialsharing.shareViaFacebook(title, img, url);
+        window.plugins.socialsharing.shareViaFacebook(title, img, url, function() {console.log('share ok')}, function(errormsg){alert(errormsg)});
     };
     $scope.twitterShare = function(title, img, url) {
         window.plugins.socialsharing.shareViaTwitter(title, img, url);
@@ -115,7 +120,6 @@ myApp.controller('newsController', function ($scope, $http) {
     $http.get('http://lolgh.spacebarweb.com/api/twitter').
         success(function (data, status, headers, config) {
             $scope.tweets = data;
-            console.log($scope.tweets);
         }).
         error(function (data, status, headers, config) {
             // error msg
