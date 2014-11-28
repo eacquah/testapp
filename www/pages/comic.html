@@ -1,33 +1,30 @@
 <div ng-controller="mainController">
     <section class="main-section">
         <div class="custom-panel large-12 large-centered medium-12 medium-centered small-12 small-centered columns centered">
-            <!--<slick ng-if="comics" lazy-load="ondemand" infinite="false" slides-to-show=1 slides-to-scroll=1 data="comics"-->
-                   <!--init-onload="true" arrows="true" centerMode="true" rtl="true">-->
-                <div slick-slider data="comics">
-                    <div ng-repeat="comic in comics">
-                        <h4>"{{ comic.title }}" posted on {{ comic.releaseDate * 1000 | date:'EEE, dd-MMM-yyyy' }}</h4>
-                        <img src="{{ comicDir }}{{ comic.url }}" ng-if="$first"/>
-                        <img data-lazy="{{ comicDir }}{{ comic.url }}" ng-if="!$first"/>
-                        <ul class="button-group even-3">
-                            <li>
-                                <a class="button" ng-click="facebookShare(comic.title,concatenate(comicDir, comic.url),concatenate(comicStemUrl, comic.comicId))">
-                                    <i class="fa fa-facebook fa-fw"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="button" ng-click="twitterShare(comic.title,concatenate(comicDir, comic.url),concatenate(comicStemUrl, comic.comicId))">
-                                    <i class="fa fa-twitter fa-fw"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="button" ng-click="generalShare(comic.title,concatenate(comicDir, comic.url),concatenate(comicStemUrl, comic.comicId))">
-                                    <i class="fa fa-share-alt fa-fw"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+            <div slick-slider data="comics">
+                <div ng-repeat="comic in comics" class="display-comic">
+                    <h4>"{{ comic.title }}" posted on {{ comic.releaseDate * 1000 | date:'EEE, dd-MMM-yyyy' }}</h4>
+                    <img src="{{ comicDir }}{{ comic.url }}" ng-if="$first"/>
+                    <img data-lazy="{{ comicDir }}{{ comic.url }}" ng-if="!$first"/>
+                    <ul class="button-group even-3">
+                        <li>
+                            <a class="button" ng-click="facebookShare(comic.title,concatenate(comicDir, comic.url),concatenate(comicStemUrl, comic.comicId))">
+                                <i class="fa fa-facebook fa-fw"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="button" ng-click="twitterShare(comic.title,concatenate(comicDir, comic.url),concatenate(comicStemUrl, comic.comicId))">
+                                <i class="fa fa-twitter fa-fw"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="button" ng-click="generalShare(comic.title,concatenate(comicDir, comic.url),concatenate(comicStemUrl, comic.comicId))">
+                                <i class="fa fa-share-alt fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            <!--</slick>-->
+            </div>
         </div>
     </section>
 </div>

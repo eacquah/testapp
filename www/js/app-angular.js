@@ -54,11 +54,6 @@ myApp.directive('slickSlider', function ($http) {
                         infinite: false,
                         slidesToShow: 1,
                         slidesToScroll: 1
-                        //centerMode: true
-                        //adaptiveHeight: true
-                        //centerPadding: "60px"
-                        //fade: true
-                        //rtl: true
                     });
                 });
             });
