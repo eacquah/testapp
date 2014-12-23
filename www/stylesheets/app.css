@@ -23418,79 +23418,85 @@ footer {
   bottom: 0;
   width: 100%;
   height: 70px;
+  z-index: 999;
 }
 
-/* line 8, ../scss/_footer.scss */
+/* line 9, ../scss/_footer.scss */
 footer .panel {
   border: none;
   color: #ebebeb;
 }
 
-/* line 4, ../scss/_generic.scss */
+/* line 1, ../scss/_generic.scss */
 html, body {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
   background: #FFFFFF;
 }
 
-/* line 9, ../scss/_generic.scss */
+/* line 6, ../scss/_generic.scss */
+h1 {
+  font-size: 25px;
+}
+
+/* line 10, ../scss/_generic.scss */
 h1, h2, h3, h4 {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
 }
 
-/* line 13, ../scss/_generic.scss */
+/* line 14, ../scss/_generic.scss */
 .top-bar ul li > a {
   font-family: 'Bangers', 'Open Sans', 'Helvetica';
 }
 
-/* line 17, ../scss/_generic.scss */
+/* line 18, ../scss/_generic.scss */
 .share-button {
   text-align: center;
 }
 
-/* line 21, ../scss/_generic.scss */
+/* line 22, ../scss/_generic.scss */
 iframe[id^='twitter-widget-'] {
   width: 100% !important;
 }
 
-/* line 25, ../scss/_generic.scss */
+/* line 26, ../scss/_generic.scss */
 .timeline {
   border-radius: 0 !important;
 }
 
-/* line 29, ../scss/_generic.scss */
+/* line 30, ../scss/_generic.scss */
 .fb-like-box iframe {
   width: 100% !important;
   height: 100% !important;
   z-index: 1;
 }
 
-/* line 35, ../scss/_generic.scss */
+/* line 36, ../scss/_generic.scss */
 .no-pad-right {
   padding-right: 0;
 }
 
-/* line 39, ../scss/_generic.scss */
+/* line 40, ../scss/_generic.scss */
 .centered {
   text-align: center;
 }
 
-/* line 43, ../scss/_generic.scss */
+/* line 44, ../scss/_generic.scss */
 .secondary-btn {
   background: #333;
 }
 
-/* line 47, ../scss/_generic.scss */
+/* line 48, ../scss/_generic.scss */
 .top-bar {
   background: #333;
 }
 
-/* line 51, ../scss/_generic.scss */
+/* line 52, ../scss/_generic.scss */
 .custom-panel {
   border-style: solid;
   border-width: 1px;
   border-color: #e3e3e3;
   margin-bottom: 1.25rem;
-  padding: 20px 20px 40px 20px;
+  padding: 1.25rem;
   background: #FFFFFF;
   color: #333333;
   border: none;
@@ -23519,20 +23525,57 @@ iframe[id^='twitter-widget-'] {
   line-height: 1.4;
 }
 
-/* line 65, ../scss/_generic.scss */
+/* line 62, ../scss/_generic.scss */
 .display-comic {
   min-height: 100px;
   background: #fff url("/www/img/loading.gif") center center no-repeat;
 }
 
-/* line 71, ../scss/_generic.scss */
+/* line 67, ../scss/_generic.scss */
 .slick-prev:before, .slick-next:before {
   color: #000000 !important;
 }
 
-/* line 75, ../scss/_generic.scss */
-footer {
-  z-index: 999;
+/* line 71, ../scss/_generic.scss */
+.tweet-panel {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e3e3e3;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #FFFFFF;
+  color: #333333;
+  border: 1px dashed #ebebeb;
+  text-align: left;
+  position: relative;
+}
+/* line 54, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.tweet-panel > :first-child {
+  margin-top: 0;
+}
+/* line 55, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.tweet-panel > :last-child {
+  margin-bottom: 0;
+}
+/* line 60, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.tweet-panel h1, .tweet-panel h2, .tweet-panel h3, .tweet-panel h4, .tweet-panel h5, .tweet-panel h6, .tweet-panel p, .tweet-panel li, .tweet-panel dl {
+  color: #333333;
+}
+/* line 67, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.tweet-panel h1, .tweet-panel h2, .tweet-panel h3, .tweet-panel h4, .tweet-panel h5, .tweet-panel h6 {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+/* line 69, ../bower_components/foundation/scss/foundation/components/_panels.scss */
+.tweet-panel h1.subheader, .tweet-panel h2.subheader, .tweet-panel h3.subheader, .tweet-panel h4.subheader, .tweet-panel h5.subheader, .tweet-panel h6.subheader {
+  line-height: 1.4;
+}
+
+/* line 82, ../scss/_generic.scss */
+.corner-img {
+  position: absolute;
+  top: -20px;
+  left: -20px;
 }
 
 /* line 1, ../scss/_layout.scss */

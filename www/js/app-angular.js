@@ -96,7 +96,6 @@ myApp.controller('toonController', function ($scope, $http, $sce) {
             // error msg
         });
 
-
     $scope.facebookShare = function(title, img, url) {
         window.plugins.socialsharing.shareViaFacebook(title, img, url, function() {console.log('share ok')}, function(errormsg){alert(errormsg)});
     };
@@ -104,7 +103,8 @@ myApp.controller('toonController', function ($scope, $http, $sce) {
         window.plugins.socialsharing.shareViaTwitter(title, img, url);
     };
     $scope.generalShare = function(title, img, url) {
-        window.plugins.socialsharing.share(title, img, url);
+        var msg = title + ' ' + img + ' ' + url;
+        window.plugins.socialsharing.share(msg, title, img, url);
     };
 });
 

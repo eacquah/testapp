@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="nl.x-services.plugins.socialsharing"
-        version="4.3.10">
+        version="4.3.12">
 
   <name>SocialSharing</name>
 
@@ -15,7 +15,7 @@
 
   <license>MIT</license>
 
-  <keywords>Social, Share, Twitter, Facebook, Email, SMS, WhatsApp</keywords>
+  <keywords>Social, Share, Twitter, Facebook, Email, SMS, WhatsApp, Tumblr, Pocket, LinkedIN</keywords>
 
   <repo>https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git</repo>
 

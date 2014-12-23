@@ -38,20 +38,13 @@
     <script src="cordova.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="js/SocialSharing.js"></script>
     <script type="text/javascript" charset="utf-8">
-
-        // Wait for device API libraries to load
-        //
         document.addEventListener("deviceready", onDeviceReady, false);
-
-        // device APIs are available
-        //
         function onDeviceReady() {
             navigator.splashscreen.show();
         }
-
     </script>
 </head>
 
@@ -59,11 +52,9 @@
 <header>
     <div class="contain-to-grid fixed">
         <nav class="top-bar" data-topbar role="navigation">
-            <ul class="title-area centered">
-                <li class="name">
-                    <h1><a href="#">LolGH</a></h1>
-                </li>
-            </ul>
+            <div class="title-area centered">
+                    <h1><a href="#"><img src="img/icon.png" style="width: 30px"/>LolGH.com</a></h1>
+            </div>
         </nav>
     </div>
 </header>
@@ -78,20 +69,20 @@
 <footer>
     <div class="icon-bar four-up">
         <a href="#/" class="item">
-            <i class="fa fa-comments-o fa-fw"></i>
-            <!--<label>Comics</label>-->
+            <i class="fa fa-comments-o fa-fw" style="color: #007095"></i>
+            <label style="color: #ADADAD">Comics</label>
         </a>
         <a href="#toons" class="item">
-            <i class="fa fa-video-camera fa-fw"></i>
-            <!--<label>Toons</label>-->
+            <i class="fa fa-video-camera fa-fw" style="color: #007095"></i>
+            <label style="color: #ADADAD">Toons</label>
         </a>
         <a href="#news" class="item">
-            <i class="fa fa-newspaper-o fa-fw"></i>
-            <!--<label>News</label>-->
+            <i class="fa fa-newspaper-o fa-fw" style="color: #007095"></i>
+            <label style="color: #ADADAD">News</label>
         </a>
         <a href="#contact" class="item">
-            <i class="fa fa-envelope-o fa-fw"></i>
-            <!--<label>Contact</label>-->
+            <i class="fa fa-envelope-o fa-fw" style="color: #007095"></i>
+            <label style="color: #ADADAD">Contact</label>
         </a>
     </div>
 </footer>

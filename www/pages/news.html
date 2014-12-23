@@ -3,8 +3,10 @@
         <div class="custom-panel large-12 large-centered medium-12 medium-centered small-12 small-centered columns centered">
             <div class="content" ng-repeat="tweet in tweets">
                 <div ng-show="tweet.text != null">
-                    <p><i class="fa fa-twitter fa-2x"></i>{{ tweet.text }}</p>
-                    <hr ng-hide="$last">
+                    <div class="tweet-panel">
+                        <div class="corner-img"><i class="fa fa-twitter-square fa-3x" style="color: #0078a0"></i></div>
+                        <p>{{ tweet.text }}</p>
+                    </div>
                 </div>
             </div>
         </div>
