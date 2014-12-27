@@ -64,7 +64,7 @@ myApp.directive('slickSlider', function ($http) {
 // create the controller and inject Angular's $scope
 myApp.controller('mainController', function ($scope, $timeout, $http) {
 
-    $scope.comicDir = 'http://lolgh.com/cms/content/lol_gh/';
+    $scope.comicDir = 'http://lolgh.com/img/comics/';
     $scope.comicStemUrl = 'http://lolgh.com/comic/';
 
     $scope.concatenate = function(string1, string2) {
